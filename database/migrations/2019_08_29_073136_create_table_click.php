@@ -14,6 +14,13 @@ class CreateTableClick extends Migration
     public function up()
     {
         //
+        Schema::create('click', function (Blueprint $table) {
+        //increments string timestamps 类型
+        $table->increments('id');
+        $table->string('num');
+        //$table->string('password');
+        $table->timestamps();
+        });
     }
 
     /**
@@ -24,5 +31,6 @@ class CreateTableClick extends Migration
     public function down()
     {
         //
+        Schema::drop('click');
     }
 }
