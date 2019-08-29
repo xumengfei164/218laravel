@@ -19,7 +19,7 @@ class CreateTableClick extends Migration
         $table->increments('id');
         $table->string('num');
         //$table->string('password');
-        $table->timestamps();
+     //   $table->timestamps();
         });
     }
 
